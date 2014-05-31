@@ -1,0 +1,10 @@
+<?php
+if(!$_SESSION['HTTP_ORIGIN']="localhost/reg.php")
+header('Location:localhost/reg.php');
+else
+{
+session_start();
+session_destroy();
+header('Location:index.php');
+}
+?>
